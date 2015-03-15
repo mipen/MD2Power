@@ -28,6 +28,7 @@
         <allowances>
           <thingDefs>
             <li>MD2Coal</li>
+            <li>MD2Charcoal</li>
           </thingDefs>
         </allowances>
       </fixedStorageSettings>
@@ -36,6 +37,7 @@
         <allowances>
           <thingDefs>
             <li>MD2Coal</li>
+            <li>MD2Charcoal</li>
           </thingDefs>
         </allowances>
       </defaultStorageSettings>
@@ -100,6 +102,11 @@
         <basePowerConsumption>-5600</basePowerConsumption>
         <transmitsPower>true</transmitsPower>
         <powerToggleable>false</powerToggleable>
+      </li>
+      <li>
+        <compClass>CompGlower</compClass>
+        <glowRadius>6</glowRadius>
+        <glowColor>(217,112,33,0)</glowColor>
       </li>
     </comps>
     <killedLeavings>
