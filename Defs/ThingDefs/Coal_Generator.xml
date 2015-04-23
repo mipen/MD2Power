@@ -15,7 +15,6 @@
   <!-- Coal Feeder -->
   <ThingDef ParentName="BuildingBase">
     <defName>MD2CoalFeeder</defName>
-    <eType>BuildingComplex</eType>
     <label>coal feeder</label>
     <thingClass>MD2.CoalFeeder</thingClass>
     <graphicPath>Buildings/CoalPower/CoalFeeder</graphicPath>
@@ -49,7 +48,7 @@
     <fillPercent>1</fillPercent>
     <statBases>
       <WorkToMake>330</WorkToMake>
-      <MaxHealth>100</MaxHealth>
+      <MaxHitPoints>100</MaxHitPoints>
       <Flammability>1.0</Flammability>
     </statBases>
     <description>Feeds coal into a coal burner.</description>
@@ -74,7 +73,6 @@
   <!-- Coal Burner-->
   <ThingDef ParentName="BuildingBase">
     <defName>MD2CoalBurner</defName>
-    <eType>BuildingComplex</eType>
     <label>coal burner</label>
     <thingClass>MD2.CoalPowerPlant</thingClass>
     <graphicPath>Buildings/CoalPower/CoalBurner</graphicPath>
@@ -84,7 +82,7 @@
     <castEdgeShadows>true</castEdgeShadows>
     <fillPercent>1</fillPercent>
     <statBases>
-      <MaxHealth>550</MaxHealth>
+      <MaxHitPoints>550</MaxHitPoints>
       <WorkToMake>4000</WorkToMake>
       <Flammability>1.0</Flammability>
       <Beauty>-60</Beauty>
