@@ -17,28 +17,30 @@
     <defName>MD2CoalFeeder</defName>
     <label>coal feeder</label>
     <thingClass>MD2.CoalFeeder</thingClass>
-    <graphicPath>Buildings/CoalPower/CoalFeeder</graphicPath>
-    <graphicClass>Graphic_Single</graphicClass>
+    <graphicData>
+      <texPath>Buildings/CoalPower/CoalFeeder</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
     <altitudeLayer>Waist</altitudeLayer>
     <passability>Impassable</passability>
     <building>
       <fixedStorageSettings>
         <priority>Important</priority>
-        <allowances>
+        <filter>
           <thingDefs>
             <li>MD2Coal</li>
             <li>MD2Charcoal</li>
           </thingDefs>
-        </allowances>
+        </filter>
       </fixedStorageSettings>
       <defaultStorageSettings>
         <priority>Important</priority>
-        <allowances>
+        <filter>
           <thingDefs>
             <li>MD2Coal</li>
             <li>MD2Charcoal</li>
           </thingDefs>
-        </allowances>
+        </filter>
       </defaultStorageSettings>
     </building>
     <inspectorTabs>
@@ -60,10 +62,10 @@
     <neverMultiSelect>true</neverMultiSelect>
     <killedLeavings>
       <ChunkSlagSteel>1</ChunkSlagSteel>
-  </killedLeavings>
+    </killedLeavings>
     <designationCategory>Power</designationCategory>
     <staticSunShadowHeight>0.3</staticSunShadowHeight>
-    <itemSurface>true</itemSurface>
+    <surfaceType>Item</surfaceType>
     <PlaceWorkers>
       <li>MD2.PlacementRestricter_NextToCoalPlant</li>
     </PlaceWorkers>
@@ -75,8 +77,11 @@
     <defName>MD2CoalBurner</defName>
     <label>coal burner</label>
     <thingClass>MD2.CoalPowerPlant</thingClass>
-    <graphicPath>Buildings/CoalPower/CoalBurner</graphicPath>
-    <graphicClass>Graphic_Single</graphicClass>
+    <graphicData>
+      <texPath>Buildings/CoalPower/CoalBurner</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+<drawSize>(2,3)</drawSize>
+    </graphicData>
     <altitudeLayer>BuildingTall</altitudeLayer>
     <passability>Impassable</passability>
     <castEdgeShadows>true</castEdgeShadows>
@@ -93,11 +98,10 @@
     <costList>
       <Steel>650</Steel>
     </costList>
-    <graphicOverdraw>false</graphicOverdraw>
     <comps>
       <li>
         <compClass>CompPowerTrader</compClass>
-        <basePowerConsumption>-5600</basePowerConsumption>
+        <basePowerConsumption>-9600</basePowerConsumption>
         <transmitsPower>true</transmitsPower>
         <powerToggleable>false</powerToggleable>
       </li>
@@ -120,7 +124,7 @@
       <ignoreNeedsPower>true</ignoreNeedsPower>
     </building>
     <constructEffect>ConstructMetal</constructEffect>
-  <researchPrerequisite>MD2CoalPowerPlant</researchPrerequisite>
+    <researchPrerequisite>MD2CoalPowerPlant</researchPrerequisite>
   </ThingDef>
 
 
